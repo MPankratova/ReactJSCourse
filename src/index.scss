@@ -203,4 +203,8 @@ body {
             }
         }
     }
+    .data__articles {
+        height: 50vh;
+        overflow-y: scroll;
+    }
 }

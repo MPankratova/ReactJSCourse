@@ -19,14 +19,18 @@ export const getArticlesFailure = (err) => ({
     payload: err,
 });
 
-export const getArticles = () => async (dispatch) => {
+export const getArticles = () => (dispatch) => {
     dispatch(getArticlesRequest());
-    try {
-        const res = await fetch(API_URL);
-        const response = await res.json();
-        dispatch(getArticlesSuccess(response));
-    } catch (err) {
-        dispatch(getArticlesFailure(err.message));
-    }
+    // try {
+    //     const res = await fetch(API_URL);
+    //     const response = await res.json();
+    //     dispatch(getArticlesSuccess(response));
+    // } catch (err) {
+    //     dispatch(getArticlesFailure(err.message));
+    // }
+    fetch(API_URL)
+        .then((res) => res.json())
+        .then((response) => dispatch(getArticlesSuccess(response)))
+        .catch((err) => getArticlesFailure(err));
 
 };

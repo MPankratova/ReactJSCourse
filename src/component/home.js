@@ -41,9 +41,9 @@ export default function Home() {
                 </div>
             </div>
             <div className='data__field'>
-                
+                <div className='data__articles'>
                     {articles.map(renderArticle)}
-                
+                </div>
             </div>
             
         </div >
