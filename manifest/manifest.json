@@ -1,0 +1,16 @@
+{
+    "short_name": "ChatMargo",
+    "name": "ChatMargo React cource",
+    "icons": [
+        {
+            "src": "/manifest/icon1.png",
+            "sizes": "30x30",
+            "type": "png"
+        }
+    ],
+    "start_url": "/",
+    "background_color": "#7ACCE5",
+    "theme_color": "#7ACCE5",
+    "orientation": "any",
+    "display": "standalone"
+}
