@@ -1,16 +1,59 @@
 {
     "short_name": "ChatMargo",
-    "name": "ChatMargo React cource",
-    "icons": [
+    "name": "Chats Margo React cource",
+    "icons": [{
+            "src": "/manifest/pikachu_icon_32.png",
+            "sizes": "32x32",
+            "type": "png",
+            "purpose": "any maskable"
+        },
         {
-            "src": "/manifest/icon1.png",
-            "sizes": "30x30",
-            "type": "png"
-        }
-    ],
-    "start_url": "/",
+            "src": "/manifest/pikachu_icon_48.png",
+            "sizes": "48x48",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/manifest/pikachu_icon_64.png",
+            "sizes": "64x64",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/manifest/pikachu_icon_72.png",
+            "sizes": "72x72",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/manifest/pikachu_icon_96.png",
+            "sizes": "96x96",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/manifest/pikachu_icon_128.png",
+            "sizes": "128x128",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/manifest/pikachu_icon_256.png",
+            "sizes": "256x256",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/manifest/pikachu_icon_512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }],
+
+    "start_url": ".",
     "background_color": "#7ACCE5",
     "theme_color": "#7ACCE5",
     "orientation": "any",
-    "display": "standalone"
+    "display": "standalone",
+    "gcm_sender_id": "1234567890"
 }

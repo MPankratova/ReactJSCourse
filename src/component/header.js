@@ -5,6 +5,7 @@ import IconButton from '@material-ui/core/IconButton';
 import MenuRoundedIcon from '@material-ui/icons/MenuRounded';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
+import PushToggle from "./pushToggle";
 
 export default function Header() {
     const profile = useSelector(store => store.profile);
@@ -20,6 +21,7 @@ export default function Header() {
 
     return (
         <div className="header">
+            <PushToggle />
             <div className='header__menu'>
                 <IconButton
                     aria-controls="simple-menu"
